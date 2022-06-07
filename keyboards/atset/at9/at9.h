@@ -1,6 +1,4 @@
-/* Copyright 2020 kkatano
- * Copyright 2022 takishim
- *
+/* 
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation, either version 2 of the License, or
@@ -14,5 +12,15 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
+#include "quantum.h"
 
-#include "rev4.h"
+#define LAYOUT( \
+      k00, k01, k02, \
+      k10, k11, k12, \
+      k20, k21, k22  \
+) \
+{ \
+    { k00, k01, k02 }, \
+    { k10, k11, k12 }, \
+    { k20, k21, k22 } \
+} 
